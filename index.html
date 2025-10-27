@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Currículum profesional de Brian Cárdenas, desarrollador web jr e ingeniero mecatrónico especializado en backend con Java, Spring Boot, Django y bases de datos."
+    />
     <title>CV - Brian Cárdenas</title>
 
     <!-- Fuente principal -->
@@ -11,28 +15,36 @@
       rel="stylesheet"
     />
 
+    <!-- Libreria de iconos Devicon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
     <!-- CSS principal -->
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Favicon (opcional) -->
     <link rel="icon" href="assets/img/favicon.png" type="image/png" />
   </head>
+
   <body>
     <!-- ======= HEADER ======= -->
     <header class="header">
       <div class="container">
         <h1 class="name">Brian Alexis Cárdenas Castañeda</h1>
-        <p class="role">Backend Developer | Java | Spring | SQL</p>
+        <p class="role">Desarrollador de Software Jr | Ingeniero Mecatrónico</p>
 
         <div class="links">
-          <a href="brianalexis50@hotmail.com">📧 Email</a>
+          <a href="mailto:alexander.50brian@gmail.com">📧 Email</a>
           <a href="https://github.com/Briancardenas12" target="_blank"
             >💻 GitHub</a
           >
-          <a href="https://www.linkedin.com/in/brian-cardenas/" target="_blank"
+          <a href="https://linkedin.com/in/brian-cardenas" target="_blank"
             >🔗 LinkedIn</a
           >
-          <a href="https://tusitio.com" target="_blank">🌐 Portafolio</a>
+          <span>📍 Bogotá D.C.</span>
         </div>
 
         <!-- Toggle modo oscuro/claro -->
@@ -49,9 +61,9 @@
     <!-- ======= PERFIL ======= -->
     <section id="perfil" class="section">
       <div class="container">
-        <h2>Perfil</h2>
+        <h2>Perfil Profesional</h2>
         <p>
-          Soy un esarrollador backend con formación en ingeniería mecatrónica y
+          Soy un desarrollador backend con formación en ingeniería mecatrónica y
           experiencia en el desarrollo de aplicaciones web utilizando Java,
           Spring Framework y Python. Me apasiona crear soluciones robustas
           escalables y eficientes, aplicando buenas prácticas de programación y
@@ -64,13 +76,45 @@
     <!-- ======= HABILIDADES ======= -->
     <section id="habilidades" class="section">
       <div class="container">
-        <h2>Habilidades</h2>
-        <ul class="skills">
-          <li><strong>Lenguajes:</strong> Java, SQL, HTML, CSS, JavaScript</li>
-          <li><strong>Frameworks:</strong> Spring, Hibernate</li>
-          <li><strong>Herramientas:</strong> Git, GitHub, VS Code, IntelliJ</li>
-          <li><strong>Bases de datos:</strong> Oracle, MySQL</li>
-        </ul>
+        <h2>Habilidades Técnicas</h2>
+
+        <div class="skills-group">
+          <h3>Lenguajes</h3>
+          <div class="skills-icons">
+            <i class="devicon-java-plain colored" title="Java"></i>
+            <i class="devicon-python-plain colored" title="Python"></i>
+            <i class="devicon-php-plain colored" title="PHP"></i>
+            <i class="devicon-cplusplus-plain colored" title="C++"></i>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Frameworks</h3>
+          <div class="skills-icons">
+            <i class="devicon-spring-plain colored" title="Spring Boot"></i>
+            <i class="devicon-django-plain colored" title="Django"></i>
+            <i class="devicon-flask-original colored" title="Flask"></i>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Bases de Datos</h3>
+          <div class="skills-icons">
+            <i class="devicon-mysql-plain colored" title="MySQL"></i>
+            <i class="devicon-oracle-original colored" title="Oracle"></i>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Herramientas</h3>
+          <div class="skills-icons">
+            <i class="devicon-git-plain colored" title="Git"></i>
+            <i class="devicon-jira-plain colored" title="Jira"></i>
+            <i class="devicon-vscode-plain colored" title="VS Code"></i>
+            <i class="devicon-intellij-plain-wordmark" title="Intellij"></i>
+            <i class="devicon-trello-plain-wordmark colored" title="Tello"></i>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -80,8 +124,17 @@
         <h2>Experiencia Laboral</h2>
 
         <div class="job">
-          <h3>Programador Jr - Meraki Software Technologies</h3>
-          <p class="periodo">Agosto 2024 - Actual</p>
+          <div class="job-header">
+            <img
+              src="assets/img/empresas/meraki_logo.png"
+              alt="Meraki Software Technologies"
+              class="company-logo"
+            />
+            <div>
+              <h3>Programador Jr - Meraki Software Technologies</h3>
+              <p class="periodo">Agosto 2024 - Actual</p>
+            </div>
+          </div>
           <ul>
             <li>Desarrollo de módulos backend en Java usando Spring Boot.</li>
             <li>Implementación de bases de datos relacionales (MySQL).</li>
@@ -91,10 +144,19 @@
         </div>
 
         <div class="job">
-          <h3>
-            Desarrollador de Proyectos de Software - Colombian TI Software
-          </h3>
-          <p class="periodo">Agosto 2022 - Febrero 2023</p>
+          <div class="job-header">
+            <img
+              src="assets/img/empresas/colombian_logo.png"
+              alt="Colombian TI Software"
+              class="company-logo"
+            />
+            <div>
+              <h3>
+                Desarrollador de Proyectos de Software - Colombian TI Software
+              </h3>
+              <p class="periodo">Agosto 2022 - Febrero 2023</p>
+            </div>
+          </div>
           <ul>
             <li>
               Desarrollo de aplicaciones web en Python con Django y Flask.
@@ -110,8 +172,17 @@
         </div>
 
         <div class="job">
-          <h3>Asesor de Soporte en Línea - X-tendo BPO</h3>
-          <p class="periodo">Enero 2021 - Febrero 2024</p>
+          <div class="job-header">
+            <img
+              src="assets/img/empresas/xtendo_logo.png"
+              alt="X-tendo BPO"
+              class="company-logo"
+            />
+            <div>
+              <h3>Asesor de Soporte en Línea - X-tendo BPO</h3>
+              <p class="periodo">Enero 2021 - Febrero 2024</p>
+            </div>
+          </div>
           <ul>
             <li>
               Brindar asistencia personalizada a clientes sobre pagos en línea.
@@ -128,28 +199,42 @@
     </section>
 
     <!-- ======= EDUCACIÓN ======= -->
-    <!-- ======= EDUCACIÓN ======= -->
     <section id="educacion" class="section">
       <div class="container">
         <h2>Educación</h2>
-        <ul>
-          <li>
-            <strong>Ingeniería en Mecatrónica</strong> — Escuela Colombiana de
-            Carreras Industriales
-            <br />
-            <em>Tesis:</em> Implementación de plataforma Hardware in the Loop
-            para la enseñanza del control sobre sistema embebido de bajo costo.
-            <br />
-            <span class="periodo">Septiembre 2022</span>
+        <ul class="education-list">
+          <li class="education-item">
+            <img
+              src="assets/img/educacion/ecci_logo.png"
+              alt="ECCI"
+              class="edu-logo"
+            />
+            <div>
+              <strong>Ingeniería en Mecatrónica</strong> — Escuela Colombiana de
+              Carreras Industriales
+              <br />
+              <em>Tesis:</em> Implementación de plataforma Hardware in the Loop
+              para la enseñanza del control sobre sistema embebido de bajo
+              costo.
+              <br />
+              <span class="periodo">Septiembre 2022</span>
+            </div>
           </li>
 
-          <li>
-            <strong>Tecnología en Mecatrónica</strong> — Corporación
-            Internacional para el Desarrollo Educativo
-            <br />
-            <em>Participación en semillero:</em> Hexápodo Programable
-            <br />
-            <span class="periodo">Junio 2017</span>
+          <li class="education-item">
+            <img
+              src="assets/img/educacion/cide_logo.png"
+              alt="CIDE"
+              class="edu-logo"
+            />
+            <div>
+              <strong>Tecnología en Mecatrónica</strong> — Corporación
+              Internacional para el Desarrollo Educativo
+              <br />
+              <em>Participación en semillero:</em> Hexápodo Programable
+              <br />
+              <span class="periodo">Junio 2017</span>
+            </div>
           </li>
         </ul>
       </div>
@@ -160,6 +245,7 @@
       <div class="container">
         <h2>Proyectos y Formación Complementaria</h2>
 
+        <!-- === PROYECTOS === -->
         <div class="project">
           <h3>API REST con Spring Boot</h3>
           <p>
@@ -180,13 +266,30 @@
           </p>
         </div>
 
+        <!-- === FORMACIÓN COMPLEMENTARIA === -->
         <div class="project">
           <h3>Formación Complementaria</h3>
+
+          <!-- Lista textual breve -->
           <ul>
             <li>Desarrollo Web en Python con Django y Flask</li>
             <li>Java Empresarial: Spring, Servlets, JSP</li>
             <li>U-Coltis & MinTIC: Programación Web (2022 - 2023)</li>
           </ul>
+
+          <!-- Logos de plataformas -->
+          <div class="education-platforms">
+            <img
+              src="assets/img/educacion/coursera_logo.png"
+              alt="Coursera"
+              title="Coursera"
+            />
+            <img
+              src="assets/img/educacion/platzi_logo.png"
+              alt="Platzi"
+              title="Platzi"
+            />
+          </div>
         </div>
       </div>
     </section>
