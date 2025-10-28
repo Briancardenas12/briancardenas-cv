@@ -20,3 +20,11 @@ toggleButton.addEventListener("click", () => {
     localStorage.setItem("theme", "light");
   }
 });
+
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  body.classList.add("dark-mode");
+  toggleButton.textContent = "☀️";
+}
